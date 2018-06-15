@@ -209,6 +209,16 @@ export const appRouter = [
         ]
     },
     {
+        path: '/unitInfo',
+        icon: 'ios-grid-view',
+        name: 'unit-info',
+        title: '单位信息维护',
+        component: Main,
+        children: [
+            { path: 'financeInfo', title: '财务信息表', name: 'finance-info', icon: 'edit', component: () => import('@/views/unit-info/finance-info.vue') }
+        ]
+    },
+    {
         path: '/advanced-router',
         icon: 'ios-infinite',
         name: 'advanced-router',
