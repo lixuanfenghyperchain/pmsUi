@@ -14,12 +14,6 @@ Vue.prototype.$ajax = axios; // 修改Vue的原型属性
 Vue.use(VueI18n);
 Vue.use(iView);
 
-Vue.http.options.emulateJSON = false;
-Vue.http.options.xhr = { withCredentials: true };
-Vue.http.interceptors.push((request, next) => {
-  request.credentials = true;
-  next();
-});
 
 new Vue({
   el: '#app',
