@@ -74,27 +74,16 @@
             formItem: {
               input1: '地方科研基础条件和能力建设',
               input2: '北京志鸿中科科技有限公司',
-              input3: '汪铁伦',
-              select: '',
-              radio: 'male',
-              checkbox: [],
-              switch: true,
-              date: '',
-              time: '',
-              slider: [20, 50],
-              textarea: ''
+              input3: '汪铁伦'
             }
-          }
+          };
         },
         methods: {
           handleSubmit () {
             this.$ajax({
               method: 'post',
               url: '/api/drummer/8bd17859',
-              data: {
-                code: '1234567',
-                username: 'Joyce'
-              }
+              data: this.formItem
             }).then(response=>{
               let _data=response.data;
               alert("hello," + _data.username);
