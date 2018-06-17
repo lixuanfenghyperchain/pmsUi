@@ -230,6 +230,17 @@ export const appRouter = [
         ]
     },
     {
+      path: '/advanced-router1',
+        icon: 'ios-infinite',
+      name: 'advanced-router1',
+      title: '项目页面',
+      component: Main,
+      children: [
+      { path: 'mutative-router1', title: '项目明细页面', name: 'mutative-router1', icon: 'link', component: () => import('@/views/dome/mutative-router.vue') },
+      { path: 'argument-page1', title: '项目明细列表', name: 'argument-page1', icon: 'android-send', component: () => import('@/views/dome/argument-page.vue') }
+    ]
+    },
+    {
         path: '/error-page',
         icon: 'android-sad',
         title: '错误页面',
