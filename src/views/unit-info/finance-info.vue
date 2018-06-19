@@ -1,5 +1,9 @@
-<style lang="less">
+<style lang="less" scoped>
     @import 'finance-info.less';
+</style>
+
+<style lang="less">
+    @import 'common.less';
 </style>
 
 <template>
@@ -208,7 +212,7 @@
                                 <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
                                 <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
                             </Row>
-                            <Row class-name="row-margin">
+                            <!--<Row class-name="row-margin">
                                 <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1） 年初未缴各项社会保险</small></Col>
                                 <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
                                 <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
@@ -227,8 +231,28 @@
                                 <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（4） 年末未缴各项社会保险</small></Col>
                                 <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
                                 <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
+                            </Row>-->
+                            <Row class-name="row-margin">
+                                <template v-for="item in formItem">
+                                    <Col v-if="item.type == 'text-box'" span="8" justify="center" align="middle">
+                                        <template v-for="tag in item.content">
+                                            <small v-if="tag.tag == 'small'">{{tag.text}}</small>
+                                            <Input v-else-if="tag.tag == 'input'" size="small"></Input>
+                                        </template>
+                                    </Col>
+                                    <Col v-else-if="item.type == 'header-row'" span="8">
+                                        <small style="width: 220px; margin: 5px; height: 24px;"><small v-if="item.content[0].tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>{{item.content[0].text}}</small>
+                                    </Col>
+                                    <Col v-else-if="item.type == 'header-col'" span="8" justify="center" align="middle">
+                                        <div class="header-col">
+                                            <template v-for="tag in item.content">
+                                                <small v-if="tag.tag == 'small'">{{tag.text}}</small>
+                                                <Input v-else-if="tag.tag == 'input'" size="small" :class="tag.class" :style="tag.style"></Input>
+                                            </template>
+                                        </div>
+                                    </Col>
+                                </template>
                             </Row>
-
                         </Form>
                     </Card>
                     </Col>
@@ -354,6 +378,13 @@
     data () {
       return {
         showModel: false,
+        formItem: [
+            /* tag: 标签类型    class: 标签类属性    style: 标签样式     text: 标签内容  model: 绑定属性     tab: 是否前置空格(相当与一个tab长度的空格) */
+            // { type: 'header-col', content: [{ tag: 'small', class: '', style: '', text: '本年一月至', model: '' }, { tag: 'input', class: 'bg-blue', style: 'width: 45px;', text: '', model: '' }, { tag: 'small', class: '', style: '', text: '累计', model: '' }] },
+            // { type: 'header-row', content: [{ tag: '', class: '', style: '', tab: true, text: '（4） 个人资本', model: '' }] },
+            // { type: 'text-box', content: [{ tag: 'input', class: '', style: '', text: '', model: '' }, { tag: 'small', class: '', style: '', text: ' 万元 ', model: '' }] }
+
+        ],
         indexColumns: [
             { title: '指标年度', key: 'ndzb', align: 'center' },
             { title: '注册资金', key: 'zczj', align: 'center' },
