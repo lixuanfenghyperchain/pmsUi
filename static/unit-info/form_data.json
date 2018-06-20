@@ -1,6 +1,202 @@
 [
   [
-    {}
+    { "type": "header-col", "content": [{ "tag": "small", "class": "", "style": "", "tab": false, "text": "职工人数", "model": "" }] },
+    { "type": "header-col", "content": [{ "tag": "small", "class": "", "style": "", "tab": false, "text": "上年度", "model": "" }] },
+    { "type": "header-col", "content": [{ "tag": "small", "class": "", "style": "", "tab": false, "text": "本年度", "model": "" }] }
   ],
-  []
+
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "1.参加养老保险职工人数", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "2.财务人员", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "其中：中级以上财务人员", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+
+  [
+    { "type": "header-col", "content": [{ "tag": "small", "class": "", "style": "", "tab": false, "text": "项目", "model": "" }] },
+    { "type": "header-col", "content": [{ "tag": "small", "class": "", "style": "", "tab": false, "text": "上年度", "model": "" }] },
+    { "type": "header-col", "content": [{ "tag": "small", "class": "", "style": "", "text": "本年一月至", "model": "" }, { "tag": "input", "class": "bg-blue", "style": "width: 45px;", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": "累计", "model": "" }] }
+  ],
+
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "1.资产总额", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "2.负债总额", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "3.销售收入", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "4.实现利润", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "5.企业提取技术开发费用", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "其中：（1） 购置新技术", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（2） 科技人员人工支出", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（3） 研究开发费用", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（4） 研究开发性固定资产购置", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（5） 其他研究支出费用", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "6.产值", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "7.应发职工工资", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "8.实发职工工资", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "9.实收资本", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（1） 国家资本", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（2）  集体资本", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（3） 法人资本", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（4） 个人资本", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（5） 外商资本", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "10.资本公积", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "11.盈余公积", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "12.缴纳各项税金情况", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（1） 年初未缴各项税金", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（2） 本年应缴各项税金", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（3） 本年已缴各项税金", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（4） 年末未缴各项税金", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（5） 减免税金", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "bg-blue", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": false, "text": "13.缴纳各种保险情况", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（1） 年初未缴各项社会保险", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（2） 本年应缴各项社会保险", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（3） 本年已缴各项社会保险", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ],
+  [
+    { "type": "header-row", "content": [{ "tag": "", "class": "", "style": "", "tab": true, "text": "（4） 年末未缴各项社会保险", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] },
+    { "type": "text-box", "content": [{ "tag": "input", "class": "", "style": "", "text": "", "model": "" }, { "tag": "small", "class": "", "style": "", "text": " 万元 ", "model": "" }] }
+  ]
 ]

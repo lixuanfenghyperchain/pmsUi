@@ -23,221 +23,14 @@
                         </div>
 
                         <Form :label-width="120" inline>
-                            <Row>
-                                <!-- justify: 水平对齐方式 可选值为start、end、center、space-around、space-between
-                                    align: 垂直对齐方式 可选值为top、middle、bottom -->
-                                <Col span="8" justify="center" align="middle"><div class="header-col"><small>职工人数</small></div></Col>
-                                <Col span="8" justify="center" align="middle"><div class="header-col"><small>上年度</small></div></Col>
-                                <Col span="8" justify="center" align="middle"><div class="header-col"><small>本年度</small></div></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">1.参加养老保险职工人数</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 人 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 人 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">2.财务人员</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 人 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 人 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">其中：中级以上财务人员</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 人 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 人 </small></Col>
-                            </Row>
-                            <Row>
-                                <Col span="8" justify="center" align="middle"><div class="header-col"><small>项目</small></div></Col>
-                                <Col span="8" justify="center" align="middle"><div class="header-col"><small>上年度</small></div></Col>
-                                <Col span="8" justify="center" align="middle"><div class="header-col"><small>本年一月至</small><Input class="bg-blue" size="small" style="width: 45px;"></Input><small>累计</small></div></Col>
-                            </Row>
-                            <!--　1　-->
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">1.资产总额</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <!-- 2 -->
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">2.负债总额</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <!-- 3 -->
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">3.销售收入</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <!-- 4 -->
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">4.实现利润</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-
-                            <!-- 5 -->
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">5.企业提取技术开发费用</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">其中：（1） 购置新技术</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2） 科技人员人工支出</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3） 研究开发费用</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（4） 研究开发性固定资产购置</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（5） 其他研究支出费用</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-
-                            <!-- 6 -->
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">6.产值</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-
-                            <!-- 7 -->
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">7.应发职工工资</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-
-                            <!-- 8 -->
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">8.实发职工工资</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-
-                            <!-- 9 -->
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">9.实收资本</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1） 国家资本</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2） 集体资本</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3） 法人资本</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（4） 个人资本</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（5） 外商资本</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-
-                            <!-- 10 -->
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">10.资本公积</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-
-                            <!-- 11 -->
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">10.盈余公积</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-
-                            <!-- 12 -->
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">12.缴纳各项税金情况</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1） 年初未缴各项税金</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2） 本年应缴各项税金</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3） 本年已缴各项税金</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（4） 年末未缴各项税金</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（5） 减免税金</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input class="bg-blue" size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-
-                            <!-- 13 -->
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">13.缴纳各种保险情况</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <!--<Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1） 年初未缴各项社会保险</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2） 本年应缴各项社会保险</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3） 本年已缴各项社会保险</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                            </Row>
-                            <Row class-name="row-margin">
-                                <Col span="8"><small style="width: 220px; margin: 5px; height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（4） 年末未缴各项社会保险</small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                                <Col span="8" justify="center" align="middle"><Input size="small"></Input><small> 万元 </small></Col>
-                            </Row>-->
-                            <Row class-name="row-margin">
-                                <template v-for="item in formItem">
+                            <!-- justify: 水平对齐方式 可选值为start、end、center、space-around、space-between
+                                align: 垂直对齐方式 可选值为top、middle、bottom -->
+                            <Row v-for="row in formItem" class-name="row-margin">
+                                <template v-for="item in row">
                                     <Col v-if="item.type == 'text-box'" span="8" justify="center" align="middle">
                                         <template v-for="tag in item.content">
                                             <small v-if="tag.tag == 'small'">{{tag.text}}</small>
-                                            <Input v-else-if="tag.tag == 'input'" size="small"></Input>
+                                            <Input v-else-if="tag.tag == 'input'" size="small" :class="tag.class"></Input>
                                         </template>
                                     </Col>
                                     <Col v-else-if="item.type == 'header-row'" span="8">
@@ -378,13 +171,7 @@
     data () {
       return {
         showModel: false,
-        formItem: [
-            /* tag: 标签类型    class: 标签类属性    style: 标签样式     text: 标签内容  model: 绑定属性     tab: 是否前置空格(相当与一个tab长度的空格) */
-            // { type: 'header-col', content: [{ tag: 'small', class: '', style: '', text: '本年一月至', model: '' }, { tag: 'input', class: 'bg-blue', style: 'width: 45px;', text: '', model: '' }, { tag: 'small', class: '', style: '', text: '累计', model: '' }] },
-            // { type: 'header-row', content: [{ tag: '', class: '', style: '', tab: true, text: '（4） 个人资本', model: '' }] },
-            // { type: 'text-box', content: [{ tag: 'input', class: '', style: '', text: '', model: '' }, { tag: 'small', class: '', style: '', text: ' 万元 ', model: '' }] }
-
-        ],
+        formItem: [],
         indexColumns: [
             { title: '指标年度', key: 'ndzb', align: 'center' },
             { title: '注册资金', key: 'zczj', align: 'center' },
@@ -449,7 +236,11 @@ render 函数传入两个参数，第一个是 h，第二个是对象，包含 r
          * 一定要用get的请求方式，post就会404 */
         this.$ajax.get('/static/unit-info/table_data.json').then(response => {
             this.indexData = response.data;
-        })
+        });
+        this.$ajax.get('/static/unit-info/form_data.json').then(response => {
+            this.formItem = response.data;
+            console.log(response);
+        });
     }
   };
 </script>
